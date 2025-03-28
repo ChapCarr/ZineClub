@@ -26,7 +26,7 @@ body{
   height: 500px;
   padding-top: 90px;
 
-  background-image: url('assets/backgrounds/collageCovers.png');
+  background-image: url('../assets/backgrounds/collageCovers.png');
   background-repeat: repeat;
   background-size: 210px;
 }
