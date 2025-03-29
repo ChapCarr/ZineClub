@@ -41,7 +41,8 @@ body{
 
 .bottom-bar{
    background-color: rgb(19,22,26);
-   background-color: blueviolet;
+   /*background-color: blueviolet;*/
+   background-color: aqua;
 }
 
 .bottom-bar_content{
