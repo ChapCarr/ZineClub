@@ -29,6 +29,8 @@ body{
   background-image: url('../assets/backgrounds/collageCovers.png');
   background-repeat: repeat;
   background-size: 210px;
+
+  
 }
 
 /*styles*/
@@ -41,7 +43,7 @@ body{
 
 .bottom-bar{
    background-color: rgb(19,22,26);
-   background-color: blueviolet;
+  /* background-color: blueviolet;*/
    
 }
 
@@ -250,3 +252,111 @@ body.zine-page{
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
+.contact {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 50%;
+}
+
+.contact p {
+  
+}
+
+.accordion {
+  padding: 10p;
+}
+
+.accordion__button {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(19,22,26);
+  color: white;
+  text-align: left;
+  transition: background 0.2s;
+  padding: 15px;
+  /*margin-bottom: 10px;   to add gap between buttons*/
+
+}
+
+.accordion__button::after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+
+}
+ 
+.accordion__button--active{background: #555555;}
+.accordion__button--active::after {content: '\25b4' }
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2;
+
+  padding: 0 15px;
+  background-color: #eeeeee;
+
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.about-box {
+  max-width: 700px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255); /* soft white background */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.about-box h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: #13161a;
+}
+
+.about-box p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-1deg);
+    background-color: #fff8e7;
+    border-color: #ff4d6d;
+  }
+  25% {
+    transform: rotate(1deg);
+    background-color: #fce1ff;
+    border-color: #6a0dad;
+  }
+  50% {
+    transform: rotate(-1deg);
+    background-color: #e0f7fa;
+    border-color: #00bcd4;
+  }
+  75% {
+    transform: rotate(1deg);
+    background-color: #ffe0e0;
+    border-color: #ff4081;
+  }
+}
+
+.about-box:hover {
+  animation: wiggle 1s infinite ease-in-out;
+  box-shadow: 10px 10px 0 #333;
+  
+}
+
+
